@@ -1,0 +1,19 @@
+package controle;
+
+import java.util.Scanner;
+
+public class SwitchComBreak {
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		String conceito = "";
+		int nota = 7;
+		
+		switch(nota) {
+		case 10:
+			conceito = "A";
+		}
+		entrada.close();
+	}
+}

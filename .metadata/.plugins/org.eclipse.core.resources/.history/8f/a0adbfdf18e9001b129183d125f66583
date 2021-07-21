@@ -1,0 +1,8 @@
+package fundamentos;
+
+public class Logicos {
+	private void man() {
+		// TODO Auto-generated method stub
+
+	}
+}

@@ -1,0 +1,9 @@
+package controle;
+
+import java.util.Scanner;
+
+public class IfElseIf {
+	Scanner entrada = new Scanner(System.in);
+	
+	entrada.close();
+}
