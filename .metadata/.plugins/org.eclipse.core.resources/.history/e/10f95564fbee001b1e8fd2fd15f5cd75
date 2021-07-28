@@ -1,0 +1,20 @@
+package colecoes;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class ConjuntoComportado {
+	public static void main(String[] args) {
+		
+		Set<String> listaAprovados = new HashSet<>();
+		
+		listaAprovado.add("Ana");
+		listaAprovado.add("Carlos");
+		listaAprovado.add("Luca");
+		listaAprovado.add("Pedro");
+		
+		for(String canditado: listaAprovado) {
+			System.out.println(candidato);
+		}
+	}
+}
