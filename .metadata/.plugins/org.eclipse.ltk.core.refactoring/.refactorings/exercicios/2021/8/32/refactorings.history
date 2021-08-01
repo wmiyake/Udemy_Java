@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;oo.heranca.desafio.Interface&apos; to &apos;Luxo&apos;&#x0D;&#x0A;- Original project: &apos;exercicios&apos;&#x0D;&#x0A;- Original element: &apos;oo.heranca.desafio.Interface&apos;&#x0D;&#x0A;- Renamed element: &apos;oo.heranca.desafio.Luxo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Interface&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;oo.heranca.desafio{Interface.java[Interface" matchStrategy="1" name="Luxo" qualified="false" references="true" similarDeclarations="false" stamp="1627782188476" textual="false" version="1.0"/>
+</session>
