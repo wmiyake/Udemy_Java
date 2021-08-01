@@ -1,0 +1,11 @@
+package oo;
+
+public class Jantar {
+
+	public static void main(String[] args) {
+		Pessoa convidade = new Pessoa(99.95);
+		
+		Arroz ingrediente1 = new Arroz(0.250);
+		Feijao ingrediente2 = new feijao();
+	}
+}
