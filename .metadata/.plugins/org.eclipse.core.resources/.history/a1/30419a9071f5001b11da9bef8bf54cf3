@@ -1,0 +1,10 @@
+package lambdas;
+
+public class Trabalho1 implements Runnable{
+	
+	@Overrida
+	public void run() {
+		
+	}
+
+}
