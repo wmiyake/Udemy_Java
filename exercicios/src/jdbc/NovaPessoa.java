@@ -1,5 +1,7 @@
 package jdbc;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -12,8 +14,16 @@ public class NovaPessoa {
 		System.out.print("Informe o nome: ");
 		String nome = entrada.nextLine();
 		
-		String sql = "INSERT INTO pessoas (nome) VALUES('" + nome + "')";
+		Connection conexao = FabricaConexao.getConexao();
 		
+		//String sql = "INSERT INTO pessoas (nome) VALUES('" + nome + "')";
+		String sql = "INSERT INTO pessoas (nome) VALUES(?)";
+		PreparedStatement stmt = conexao.prepareStatement(sql);
+		stmt.setNString(1, nome);
+		
+		stmt.execute();
+		
+		System.out.println("Pessoa Incluida com Sucesso!");
 		entrada.close();
 	}
 
