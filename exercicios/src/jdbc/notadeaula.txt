@@ -1,0 +1,28 @@
+
+Classes DAO
+0
+0 votos a favor
+Marcelo · Aula 320 · há 10 meses
+Só para garantir que entendi este vídeo, o ideal é colocar criar uma DAO de acesso ao banco, e através da DAO, criar as consultas de SELECT, DELETE, UPDATE de todas as tabelas do banco dentro da DAO, exemplo, tabela Clientes, tabela produtos....
+
+
+
+Depois criar essas consultas criar classes JAVA para criar as regras de negócio buscando os dados dentro das consultas dentro da Classe DAO.
+
+Seria isso?
+
+1 resposta
+Mario Massari
+Mario
+há 10 meses
+0
+0 votos a favor
+Fala Marcelo, Beleza?
+
+
+
+Isso mesmo! Você utiliza o DAO para se conectar ao banco e dele você vai fazer as requisições necessárias dentro das classes Java, nas quais vão atender a sua necessidade.
+
+
+
+Bons estudos!
