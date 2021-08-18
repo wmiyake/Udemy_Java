@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -21,7 +22,8 @@ public class Pedido {
 	private Date data;
 	
 	//Bidirecional #2
-	@OneToMany(mappedBy = "pedido")
+	//Esse é o valor Default de Fetch (..toMany -> LAZY)
+	@OneToMany(mappedBy = "pedido", fetch = FetchType.LAZY) 
 	private List<ItemPedido> itens;
 	
 	//Muito para Muitos #2

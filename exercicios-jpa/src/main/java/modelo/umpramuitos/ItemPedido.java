@@ -2,6 +2,7 @@ package modelo.umpramuitos;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -19,7 +20,8 @@ public class ItemPedido {
 	@ManyToOne
 	private Pedido pedido;
 	
-	@ManyToOne
+	//Esse é o valor Default de Fetch (..toOne -> EAGER)
+	@ManyToOne(fetch = FetchType.EAGER) //Esse é o valor Default
 	private Produto produto;
 	
 	@Column(nullable = false)
