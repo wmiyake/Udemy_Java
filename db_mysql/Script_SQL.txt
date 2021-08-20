@@ -1,0 +1,40 @@
+SELECT c.nome, c.nome
+    FROM mepresas e, empresas_unidades eu, cidades c 
+        where e.id = eu.empresa_id 
+            and c.id = eu.cidade_id AND SEDE
+
+SELECT * FROM wm.cidades;
+
+SELECT * FROM wm.estados;
+
+SELECT * FROM curso_java.usuario;
+SELECT * FROM Usuario u;
+
+USE curso_java;
+SELECT * FROM pessoas;
+SELECT u.* from curso_java.usuario u;
+SELECT u.* from curso_java.usuario u limit 5;
+SELECT u.* from curso_java.usuario u limit 5 offset 3;
+SELECT * FROM produtos;
+select * FROM assentos;
+select * from itempedido;
+select * from pedido;
+select * from itempedido;
+select * from produtos;
+select * FROM clientes;
+
+INSERT INTO clientes (nome, assento_id) VALUES ("Daniel", 1);
+************************************************************************
+
+SELECT * FROM tio_sobrinho;
+SELECT * FROM tio;
+SELECT * FROM sobrinho;
+************************************************************************
+SELECT * FROM filmes;
+SELECT * FROM atores;
+SELECT * FROM atores_filmes;
+SELECT * FROM usuario;
+
+select avg(nota) as Media from filmes;
+
+************************************************************************
