@@ -3,7 +3,6 @@ package br.com.cod3r.exerciciossb.conttrollers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,11 +17,7 @@ public class ProdutoController {
 	private ProdutoRepository produtoRepository;
 	
 	@PostMapping
-	public @ResponseBody Produto novoPorduto(
-			@RequestParam String nome,
-			@RequestParam double preco,
-			@RequestParam double desconto) {
-		Produto produto = new Produto( nome, preco, desconto);
+	public @ResponseBody Produto novoPorduto(@Valid Produto produto) {
 		//System.out.println(produto.repository);
 		produtoRepository.save(produto);
 		return produto;
