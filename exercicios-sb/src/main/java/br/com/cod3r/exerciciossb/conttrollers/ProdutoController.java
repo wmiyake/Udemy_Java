@@ -1,6 +1,9 @@
 package br.com.cod3r.exerciciossb.conttrollers;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -21,5 +24,10 @@ public class ProdutoController {
 		//System.out.println(produto.repository);
 		produtoRepository.save(produto);
 		return produto;
+	}
+	//Retorna todos produtos
+	@GetMapping
+	public Iterable<Produto> obterProdutos() {
+		return produtoRepository.findAll();
 	}
 }
