@@ -1,0 +1,17 @@
+Conceito de Injeção de Dependencia
+IoC - > DI
+
+A PRECISA DA CLASSE B
+CLASS INSTANCIA CLASS B
+
+EXEMPL 
+B b = new B();
+
+Classe a precisa de b
+___________________________________________
+
+@Autowired no caso do Spring
+
+
+
+
